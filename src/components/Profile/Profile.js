@@ -7,6 +7,8 @@ import TimelineContent from '@material-ui/lab/TimelineItem'
 import TimelineItem from '@material-ui/lab/TimelineItem'
 import myImage from '../../assets/images/displayImage.jpg'
 import { Typography} from '@material-ui/core'
+import CustomButton from '../Button/Button'
+import GetAppIcon from '@material-ui/icons/GetApp'
 
 const CustomTimelineItem = ({ title, text, link}) => (
     <TimelineItem>
@@ -15,7 +17,7 @@ const CustomTimelineItem = ({ title, text, link}) => (
          {link ? (
          <Typography className="timeline_text">
             <span>{title}:</span>{" "} 
-            <a href={link} target='_blank'alt="">
+            <a href={link} style={{textDecoration: "none"}}>
             {text}
             </a>
             </Typography>
@@ -53,8 +55,10 @@ const Profile = () => {
                         />
                   ))}
                </CustomTimeline>
-               <br/>
-               <button>my Button</button>
+                <div className="button_container" style={{ display: "flex"}}>
+                <CustomButton text={"Download Cv"} icon={<GetAppIcon />}/>
+                </div> 
+                
            </div>
         </div>
     );

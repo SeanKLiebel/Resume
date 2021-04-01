@@ -6,7 +6,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 export default {
-    name: 'Sean is coding',
+    name: 'Sean Liebel',
     title: 'Full stack developer',
 
     birthday: '05th June 1985',

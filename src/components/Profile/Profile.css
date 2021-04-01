@@ -49,11 +49,18 @@
     font-weight: 400 !important;
 }
 
-.timelineItem_text > a:link {
+.timelineItem_text > a{
     font-size: 13.5px !important;
-    text-decoration: none;
+    
 }
 
 .timelineItem_text > span {
    color: black;
+}
+
+.profile .button_container {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    margin-top: 20px;
 }
